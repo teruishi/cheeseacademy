@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おみくじ練習</title>
+</head>
+
+<body>
+  <script>
+    // ここに処理を追加
+    const min = 0;
+    const max = 4;
+    const randomNumber1 = Math.random();
+    const randomNumber2 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    // 0から４が出てくる
+    // 0：大吉
+    // 1：中吉
+    // 2：小吉
+    // 3：凶
+    // 4：大凶
+    if (randomNumber2 === 0) {
+      alert("大吉");
+    } else if (randomNumber2 === 1) {
+      alert("中吉");
+    } else if (randomNumber2 === 2) {
+      alert("小吉");
+    } else if (randomNumber2 === 3) {
+      alert("凶");
+    } else {
+      alert("大凶");
+    }
+  </script>
+</body>
+
+</html>

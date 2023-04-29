@@ -1,0 +1,345 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+body {
+	color: black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* about */
+
+.profile {
+	width: 960px;
+	margin: auto;
+	text-align: center;
+	color: black;
+}
+
+.about_title {
+	margin: 0 0 24px;
+	font-size: 24px;
+	color: #ffd61a;
+}
+
+.about_text {
+	font-size: 24Px;
+	color: #ffd61a;
+}
+
+.about_academy {
+	margin: 0 0 64px;
+}
+
+.academy_profile {
+	margin: 0 0 40px;
+}
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*course
+---------------------*/
+.text_center {
+	text-align: center;
+}
+
+.course_title {
+	margin: 64px 0 64px;
+	text-align: center;
+}
+
+.text_title {
+	text-align: center;
+	font-size: 24px;
+	color: #222222
+}
+
+.course_list {
+	display: flex;
+}
+
+.farm_img {
+	width: 480px;
+	margin: 0 48px 0 0;
+}
+
+.farm_text {
+	width: 480px;
+	margin: auto;
+	text-align: left;
+}
+
+.farm_content {
+	font-size: 24px;
+}
+
+.study_list {
+	display: flex;
+}
+
+.study_text {
+	width: 480px;
+	margin: auto;
+	padding: 0 24px 0;
+}
+
+.study_img {
+	width: 528px;
+	margin: 0 0 48px 0;
+}
+
+.study_title {
+	font-size: 24px;
+	color: #222222;
+}
+
+.making_list {
+	display: flex;
+}
+
+.making_img {
+	width: 480px;
+	margin: 0 48px 0 0;
+}
+
+.making_text {
+	width: 528px;
+	margin: auto;
+	text-align: left;
+}
+
+.making_content {
+	font-size: 24px;
+	color: #222222;
+}
+
+/*News
+---------------------*/
+.btn {
+	display: block;
+	width: 300px;
+	height: 59px;
+	font-size: 21px;
+	margin: auto;
+	padding: 19px 0;
+	background-color: #ffd61a;
+	color: white;
+	text-align: center;
+	align-items: center;
+}
+
+.text__head {
+	color: #ffd61a;
+	margin: 64px 0 0;
+}
+
+.news__title {
+	margin: 0 0 64px;
+}
+
+.list {
+	display: flex;
+}
+
+.news_image {
+	margin: 0 32px 0 0;
+}
+
+.news_text {
+	text-align: justify;
+}
+
+.news_contents {
+	margin: 0 0 32px;
+}
+
+.news_day {
+	margin: 0 0 24px;
+}
+
+.btn_margin {
+	margin: 56px 0 48px;
+	align-items: center;
+}
+
+.head_text {
+	font-size: 48px;
+	color: #efefef;
+	position: absolute;
+	transform: translate3d(-50%, -50%, 0);
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.head_item {
+	margin: 60px 0 0;
+	font-size: 36px;
+	color: #efefef;
+	position: absolute;
+	transform: translate3d(-50%, -50%, 0);
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	text-align: center;
+}
+
+.head__img {
+	position: relative;
+}
+
+/*nav
+---------------------*/
+.header_text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #efefef;
+}
+
+.header {
+	display: flex;
+	border-color: red;
+}
+
+.header_img {
+	margin: 0 0 0 48px;
+}
+
+.header_item {
+	display: flex;
+	margin: 0 0 0 30px;
+	font-size: 21px;
+	color: #ffd61a;
+}
+
+.nav-item {
+	margin: 0 0 0 24px;
+	font-size: 21px;
+}
+
+.nav-item>a {
+	color: black;
+	font-size: 21px;
+}
+
+/*contact
+---------------------*/
+.contact_title {
+	text-align: center;
+}
+
+.contact_item {
+	margin: 64px 0 12px;
+}
+
+.contact_text {
+	margin: 0 0 64px;
+}
+
+.contact_wait {
+	margin: 0 0 32px;
+}
+
+.contact_call {
+	margin: 0 0 80px;
+}
+
+.contact_wrappar {
+	width: 540px;
+	margin: auto;
+}
+
+.form_inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form_title {
+	width: 150px;
+	text-align: left;
+}
+
+.form_item {
+	width: 390px;
+	margin: 0 0 24px;
+}
+
+.contact_label_select {
+	display: block;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+/*access
+---------------------*/
+.access {
+	width: 600px;
+	display: flex;
+	margin: auto;
+}
+
+.access_title {
+	text-align: center;
+	margin: auto;
+}
+
+.access_content {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.access_title {
+	width: 180px;
+}
+
+.access_item {
+	width: 360px;
+}
+
+/*footer
+---------------------*/
+.footer {
+	padding: 32px 0 32px 0;
+	background-color: #707070;
+	text-align: center;
+}
+
+.copyrights {
+	padding: 0 0;
+	font-size: 24px;
+	color: #fff;
+}

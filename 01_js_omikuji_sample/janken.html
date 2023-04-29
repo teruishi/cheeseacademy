@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <header>
+    <h1>じゃんけん</h1>
+  </header>
+
+  <main>
+    <ul>
+      <li id="gu_btn">グー</li>
+      <li id="cho_btn">チョキ</li>
+      <li id="par_btn">パー</li>
+    </ul>
+    <div id="com_hand">コンピュータの出した手は？</div>
+    <div id="result">結果は？</div>
+    <div id="wincount">勝ち数</div>
+    <div id="gamecount">じゃんけん</div>
+    <div id="winrate">勝率：</div>
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    const random_number1 = Math.random();
+    const random_number2 = Math.floor(Math.random() * 3) + 1;
+
+    let win = 0; //勝った場合
+    let lose = 0; //負けた場合
+    let equal = 0; //あいこの場合
+
+    //1:グー
+    //2:チョキ
+    //3:パー
+
+    $("#gu_btn").on("click", function () {
+      const random_number2 = Math.floor(Math.random() * 3) + 1;
+      if (random_number2 === 1) {
+        $("#com_hand").text("コンピュータの出した手はグー");
+        //alert("コンピュータの出した手はグー")
+        $("#result").text("アイコです");
+        equal++;
+      } else if (random_number2 === 2) {
+        $("#com_hand").text("コンピュータの出した手はチョキ");
+        $("#result").text("勝ちです");
+        win++;
+      } else if (random_number2 === 3) {
+        $("#com_hand").text("コンピュータの出した手はパー");
+        $("#result").text("負けです");
+        lose++;
+      }
+      console.log(win);
+      console.log(win + lose + equal);
+      console.log(win / (win + lose + equal)) * 100
+      $("#wincount").text("勝ち" + win + "回");
+      $("#gamecount").text("じゃんけん" + (win + lose + equal) + "回");
+      $("#winrate").text("勝率" + win / (win + lose + equal) * 100 + "%");
+    });
+
+    $("#cho_btn").on("click", function () {
+      const random_number2 = Math.floor(Math.random() * 3) + 1;
+      if (random_number2 === 1) {
+        $("#com_hand").text("コンピュータの出した手はグー");
+        //alert("コンピュータの出した手はグーです")
+        $("#result").text("負けです");
+        lose++;
+        //alert("アイコ");
+      } else if (random_number2 === 2) {
+        $("#com_hand").text("コンピュータの出した手はチョキ");
+        $("#result").text("アイコです");
+        equal++;
+      } else if (random_number2 === 3) {
+        $("#com_hand").text("コンピュータの出した手はパー");
+        $("#result").text("勝ちです");
+        win++;
+      }
+      console.log(win);
+      console.log(win + lose + equal);
+      console.log(win / (win + lose + equal)) * 100
+      $("#wincount").text("勝ち" + win + "回");
+      $("#gamecount").text("じゃんけん" + (win + lose + equal) + "回");
+      $("#winrate").text("勝率" + win / (win + lose + equal) * 100 + "%");
+    });
+
+    $("#par_btn").on("click", function () {
+      const random_number2 = Math.floor(Math.random() * 3) + 1;
+      if (random_number2 === 1) {
+        $("#com_hand").text("コンピュータの出した手はグー");
+        //alert("コンピュータの出した手はグーです")
+        $("#result").text("勝ちです");
+        win++;
+        //alert("アイコ");
+      } else if (random_number2 === 2) {
+        $("#com_hand").text("コンピュータの出した手はチョキ");
+        $("#result").text("負けです");
+        lose++;
+      } else if (random_number2 === 3) {
+        $("#com_hand").text("コンピュータの出した手はパー");
+        $("#result").text("アイコです");
+        equal++;
+      }
+      console.log(win);
+      console.log(win + lose + equal);
+      console.log(win / (win + lose + equal)) * 100
+      $("#wincount").text("勝ち" + win + "回");
+      $("#gamecount").text("じゃんけん" + (win + lose + equal) + "回");
+      $("#winrate").text("勝率" + win / (win + lose + equal) * 100 + "%");
+    });
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

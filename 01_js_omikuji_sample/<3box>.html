@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/3box.css">
+    <title>3つの箱</title>
+</head>
+
+<body>
+    <header>
+        <h1>ランダム株式購入サイト</h1>
+    </header>
+
+    <main>
+        <ul class="stock_select">
+            <div>
+                <li id="stock_one_btn" class="text_center">AI関連</li>
+                <div class="box" style="background-color: red;"></div>
+                <li id="stock_one_result" class="text_center">選ばれた銘柄は</li>
+                <div class="box" style="background-color: #fff;"></div>
+            </div>
+            <div>
+                <li id="stock_two_btn" class="text_center">バイオテクノロジー関連</li>
+                <div class="box" style="background-color: green;"></div>
+                <li id="stock_one_result" class="text_center">選ばれた銘柄は</li>
+                <div class="box" style="background-color: #fff;"></div>
+            </div>
+            <div>
+                <li id="stock_three_btn" class="text_center">エネルギー関連</li>
+                <div class="box" style="background-color: blue;"></div>
+                <li id="stock_one_result" class="text_center">選ばれた銘柄は</li>
+                <div class="box" style="background-color: #fff;"></div>
+            </div>
+        </ul>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        const random_number1 = Math.random();
+        const random_number2 = Math.floor(Math.random() * 3) + 1;
+
+</body>
+
+</html>
